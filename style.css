@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header-container{
+    display: flex;
+    background-color: #1f2937;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.Odin-header-logo{
+    margin-left: 50px;
+    color: #F9FAF8;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+
+.header-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 350px;
+    margin-right: 50px;
+}
+
+.header-links > div{
+    font-weight: normal;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+/*============= Info Container ============ */
+.info-container{
+    display: flex;
+    background-color: #1f2937;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+}
+
+.info-website{
+    /*border: 2px solid red;*/
+    width: 450px;
+}
+
+.info-website h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.placeholder-text{
+    color: #F9FAF8;
+}
+.placeholder-img{
+    margin-left: 50px;
+    /* border: 2px solid green; */
+}
+
+.placeholder-img img{
+    width: 550px;
+    height: 230px;
+}
+
+.info-website > *{
+    margin-left: 5px;
+}
+.info-website p{
+    /* margin-left: 8px; */
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.info-button{
+    border-radius: 10px;
+    width: 95px;
+    height: 35px;
+    margin-top: 5px;
+    background-color: #3883F6;
+    font-size: 15px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.info-button:hover{
+    background-color: rgb(83, 84, 134);
+}
+
+.info-button:active{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
