@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
     padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     margin: 0;
 }
 
@@ -14,9 +17,11 @@
     /* align-items: center; */
 }
 
+
+
 .header-container{
     display: flex;
-    background-color: #1b222b;
+    background-color: #162c30;
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
     align-items: center;
@@ -96,7 +101,7 @@
     /*background-color: #1f2937;*/
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 400px;
     align-items: center;
     /* border: 2px solid red; */
@@ -105,12 +110,16 @@
 .info-website{
     /* border: 2px solid red; */
     width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-website h1{
     font-size: 48px;
     font-weight: bold;
-    color: #F9FAF8;
+    color: #b17544;
 }
 
 .placeholder-text{
@@ -122,8 +131,8 @@
 }
 
 .placeholder-img img{
-    width: 550px;
-    height: 230px;
+    width: auto;
+    height: auto;
 }
 
 .info-website > *{
@@ -132,13 +141,15 @@
 .info-website p{
     /* margin-left: 8px; */
     font-size: 18px;
-    color: #E5E7EB;
+    color: #ba4746;
+    text-align: center;
+    font-weight: 600;
 }
 
 .info-button{
     border-radius: 10px;
     width: 95px;
-    height: 35px;
+    height: 40px;
     margin-top: 5px;
     background-color: #3883F6;
     font-size: 15px;
@@ -163,6 +174,7 @@
     background-color: #E5E7EB;
     /* position: absolute; */
     flex-direction: column;
+    box-shadow: 10px 5px 5px black;
     justify-content: center;
     margin-left: 70px;
     align-items: center;
@@ -188,7 +200,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 150px;
+    height: 160px;
     width: 1000px;
     /* border: 2px solid black; */
     margin-top: 40px;
@@ -196,9 +208,23 @@
 
 .box-primeiro,.box-segundo,.box-terceiro,
 .box-quarto{
-    border: 4px solid blue;
+    border: 5px solid #535368;
     border-radius: 5px;
-    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    transition: transform .3s;
+}
+
+.box-primeiro:hover{
+    transform: scale(1.3);
+    box-shadow:  10px 5px 5px #2c4072;
+}
+
+.box-segundo:hover{
+    transform: scale(1.3);
+    box-shadow: 10px 5px 5px #8b2a2a
 }
 
 .box-text{
@@ -213,8 +239,14 @@
 
 .box-text > div{
     height: 135px;
-    width: 145px;
+    width: 170px;
     /* border: 2px solid red; */
+}
+
+.box-image > img{
+    width: 151px;
+    height: 154px;
+    object-fit: fill;
 }
 
 /*============= quote Container ============ */
