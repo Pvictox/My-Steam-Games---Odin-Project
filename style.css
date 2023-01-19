@@ -4,23 +4,50 @@
     margin: 0;
 }
 
+.background{
+    background-image: url(./img/xeno-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
 .header-container{
     display: flex;
-    background-color: #1f2937;
+    background-color: #1b222b;
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     justify-content: space-between;
     height: 50px;
+    /* border: solid red; */
+    /* border-bottom: thick double #3f519a; */
 }
 
+.header-container h2{
+    /* border: 2px dashed rgb(120, 31, 41); */
+    /* border-radius: 5px; */
+    /* box-shadow: 10px 5px 5px black; */
+}
 .Odin-header-logo{
     margin-left: 50px;
     color: #F9FAF8;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     font-size: 24px;
 }
 
+.Odin-header-logo img{
+    width: 40px;
+    height: 40px;
+    position: inherit;
+    margin-left: 10px;
+}
 
 .header-links{
     display: flex;
@@ -36,21 +63,47 @@
     font-weight: normal;
     color: #E5E7EB;
     font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px double #5e2e2e;
+    border-bottom: 3px double #5e2e2e;
+    padding: 2px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+
+.header-links > div:hover{
+    box-shadow: inset 100px 0 0 0 #1a3c48;
+    color: white;
+}
+
+.header-links > div > img{
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+.header-links > div > a{
+    color: #54b3d6;
+}
+
 
 /*============= Info Container ============ */
 .info-container{
     display: flex;
-    background-color: #1f2937;
+    /*background-color: #1f2937;*/
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
     justify-content: center;
     height: 400px;
     align-items: center;
+    /* border: 2px solid red; */
 }
 
 .info-website{
-    /*border: 2px solid red;*/
+    /* border: 2px solid red; */
     width: 450px;
 }
 
@@ -106,10 +159,18 @@
 .random-container{
     font-family: 'Roboto', sans-serif;
     display: flex;
+    opacity: 0.9;
+    background-color: #E5E7EB;
+    /* position: absolute; */
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
+    margin-left: 70px;
     align-items: center;
+    width: 1050px;
+    border-radius: 13px;
     /* border: 2px solid red; */
+    border-top: 5mm ridge cadetblue;
+    border-bottom: 5mm ridge cadetblue;
     height: 450px;
 }
 
@@ -159,7 +220,7 @@
 /*============= quote Container ============ */
 
 .quote-container{
-    background-color: #E5E7EB;
+    /*background-color: #E5E7EB;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
