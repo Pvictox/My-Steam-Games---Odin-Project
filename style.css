@@ -277,9 +277,35 @@
 
 /*============= quote Container ============ */
 
-.quote-container{
+.all-quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #a12358;
     opacity: 0.77;
+    max-width: 2000px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.quote-img{
+    opacity: 1;
+    /* border: 2px solid green; */
+    margin-right: 30px;
+    margin: 0 auto;
+}
+.quote-img img{
+    
+width: 340px;
+    
+height: 300px;
+    
+opacity: 1;
+}
+.quote-container{
+    /* background-color: #a12358; */
+    /* opacity: 0.77; */
     display: flex;
     flex-direction: column;
     max-width: 3000px;
@@ -300,7 +326,7 @@
     /* text-align: center; */
     /* border: 2px solid red; */
     height: auto;
-    width: 800px;
+    width: 700px;
     /* display: flex; */
 }
 
