@@ -31,16 +31,19 @@
     /* border-bottom: thick double #3f519a; */
 }
 
+
 .header-container h2{
     /* border: 2px dashed rgb(120, 31, 41); */
     /* border-radius: 5px; */
     /* box-shadow: 10px 5px 5px black; */
 }
+
 .Odin-header-logo{
     margin-left: 50px;
     color: #F9FAF8;
     font-weight: bolder;
     display: flex;
+    max-width: 1000px;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -54,11 +57,20 @@
     margin-left: 10px;
 }
 
+.center-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1300px;
+    margin: 0 auto;
+}
 .header-links{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    max-width: 1000px;
     /* border: 2px solid red; */
     width: 350px;
     margin-right: 50px;
@@ -102,7 +114,9 @@
     flex-direction: row;
     font-family: 'Roboto', sans-serif;
     justify-content: space-evenly;
+    margin: 0 auto;
     height: 400px;
+    max-width: 1300px;
     align-items: center;
     /* border: 2px solid red; */
 }
@@ -176,8 +190,8 @@
     flex-direction: column;
     box-shadow: 10px 5px 5px black;
     justify-content: center;
-    margin-left: 70px;
     align-items: center;
+    margin: 0 auto;
     width: 1050px;
     border-radius: 13px;
     /* border: 2px solid red; */
